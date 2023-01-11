@@ -20,7 +20,7 @@ const Projects = () => {
       title: 'Portfolio',
       img: Portfolio,
       page: 'https://marcinwrzs.github.io/Portfolio/',
-      github: 'https://github.com/Marcinwrzs/Portoflio',
+      github: 'https://github.com/Marcinwrzs/Portfolio',
       description: '<b>React</b> Application which depicts my resume. Project is responsive and works on mobile devices. You are able to switch between <b>Day and Night mode</b>, open my resume in the <b>Resume</b> section or send an email by <b>contact form</b>.', 
       technologies: 'Technologies which have been used for this app: <b> React with Hooks, react-router, styled-components</b>. Contact Form is supported by external email service <b>EmailJS</b>.'
     },
