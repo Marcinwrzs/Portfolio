@@ -38,7 +38,7 @@ const Projects = () => {
   return (
     <Motion>
       <ProjectsWrapper>
-      <h1>Projects which I have made:</h1>
+      <h1>My projects:</h1>
       <StyledProjects>
         {projects.map((project) => {
           const {id, title, img, github, description, technologies, page} = project;

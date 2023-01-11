@@ -5,6 +5,7 @@ import About from 'pages/components/About/About';
 import Experience from 'pages/components/Experience/Experience';
 import Projects from 'pages/components/Projects/Projects';
 import Contact from 'pages/components/Contact/Contact';
+import ErrorPage from 'pages/components/ErrorPage/ErrorPage';
 import {AnimatePresence} from 'framer-motion';
 import 'index.css';
 import { PagesCountainer } from './Pages.styled'
@@ -22,6 +23,7 @@ const Pages = () => {
           <Route path="/experience" element={<Experience />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </PagesCountainer>
     </AnimatePresence>

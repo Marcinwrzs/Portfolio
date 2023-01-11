@@ -11,5 +11,6 @@ export const PagesCountainer = styled.div`
 
   @media (max-width: 800px) {
     filter: ${({ isOpen }) => isOpen ? 'blur(8px)' : ''};
+    padding: 10px 0;
   }
 `;

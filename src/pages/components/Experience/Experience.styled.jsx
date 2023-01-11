@@ -13,24 +13,27 @@ export const StyledPosition = styled.div`
   align-items: center;
   padding-top: 20px;
   
-  @media (max-width: 570px) {
+  
     h3 {
-      font-size: 14px;
+      @media (max-width: 570px) {
+        font-size: 14px;
+      }
     }
-  }
 
   h2 {
     padding-bottom: 10px;
   }
 
   ul {
-    width: 70%;
+    width: 80%;
+    padding-left: 10%;
     list-style: none;
     padding-top: 10px;
-    text-align: center;
+    text-align: left;
 
     @media (max-width: 900px) {
       width: 80%;
+      padding-left: 0;
     }
 
     @media (max-width: 700px) {

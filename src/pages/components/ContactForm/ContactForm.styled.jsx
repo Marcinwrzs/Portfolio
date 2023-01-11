@@ -7,6 +7,10 @@ export const FormWrapper = styled.div`
   h2 {
     padding-top: 150px;
   }
+
+  @media only screen and (max-width: 450px) {
+    height: 380px;
+  }
 `;
 
 export const ErrorPopup = styled.div`

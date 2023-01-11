@@ -17,13 +17,6 @@ export const Wrap = styled.div`
     position: relative;
     width: fit-content;
   }
-  
-  h1 {
-    @media (max-width: 440px) {
-      font-size: 18px;
-    }
-  }
-
 
   svg {
     color: ${({ darkMode }) => darkMode ? 'var(--font-color-night)' : 'var(--font-color-day)'};

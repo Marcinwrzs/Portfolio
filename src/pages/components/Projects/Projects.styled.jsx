@@ -24,9 +24,9 @@ export const StyledProjects = styled.div`
   flex-wrap: wrap;
 
   .link-container {
-    height: 50px;
+    height: 60px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     display: flex;
     flex-direction: column;
     padding-bottom: 10px;
@@ -53,7 +53,7 @@ export const StyledProject = styled.div`
   align-items: center;
   text-align: justify;
   margin-top: 20px;
-
+  
   h2 {
     text-align: center;
   }

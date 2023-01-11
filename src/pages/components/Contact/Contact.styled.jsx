@@ -4,10 +4,9 @@ export const ContactWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
 
   div:nth-child(4) {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 `;
 
@@ -17,7 +16,7 @@ export const SocialLink = styled.a`
   padding: 5px 5px 0 0;
   font-size: 15px;
   text-decoration: none;
-  color:inherit;
+  color: inherit;
 
   &:visited {
     text-decoration: none;

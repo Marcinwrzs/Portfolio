@@ -8,7 +8,7 @@ const Experience = () => {
     {
       id: 1,
       company: 'AXA XL',
-      role: 'Technical Lead, Broker Accreditation Analyst', 
+      role: 'Technical Lead', 
       tasks: ['Building  and Improving process areas',
       'Coordinating process improvement initiatives',
       'Supporting the team in the Production of Broker Risk Reviews']
@@ -16,7 +16,7 @@ const Experience = () => {
     {
       id: 2,
       company: 'Factor Law',
-      role: 'Analyst, Senior Financial Services Operations', 
+      role: 'Senior Financial Analyst', 
       tasks: ['Improving the process by VBA', 'Coordinating the work allocation across the Negotiator teams ']
     },
     {
@@ -43,7 +43,7 @@ const Experience = () => {
   return (
     <Motion>
       <StyledExperience>
-        <h1>Where I have worked:</h1>
+        <h1>My experience:</h1>
         {experience.map((item) => {
           const {id, company, role, tasks} = item;
           return (
