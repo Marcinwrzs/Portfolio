@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Hanken Grotesk', sans-serif;
+  text-decoration: none;
+}
+
+:root { 
+  --background-day: #FCE4D8;
+  --background-night: #1E1E1D;
+  --navigation-color: rgba(252, 228, 216, 0.25);
+  --border-color: #ca5d6f;
+  --hover-color: gray;
+  --font-color-day: black;
+  --font-color-night: #f5f5f5;
+  --skill-color-day: rgba(202,93,111, 0.7);
+}
