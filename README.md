@@ -7,6 +7,8 @@ Please visit below address to see results:
 
 ##### https://marcinwrzs.github.io/Portfolio/#/
 
+##### [go](https://marcinwrzs.github.io/Portfolio/#/){:target="_blank" rel="noopener"}
+
 ## Installation and Setup Instructions
 
 Clone down this repository. You will need node and npm installed globally on your machine.
