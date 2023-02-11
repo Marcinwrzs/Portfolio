@@ -7,7 +7,7 @@ Please visit below address to see results:
 
 ##### https://marcinwrzs.github.io/Portfolio/#/
 
-##### [go](https://marcinwrzs.github.io/Portfolio/#/){:target="_blank" rel="noopener"}
+##### [/marcinwrzs.github.io/Portfolio)](https://marcinwrzs.github.io/Portfolio/#/)
 
 ## Installation and Setup Instructions
 
