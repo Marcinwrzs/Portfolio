@@ -1,5 +1,12 @@
 # Getting Started with my portfolio
 
+### Hosting
+
+This project has been deployed as a website by github pages.
+Please visit below address to see results:
+
+##### https://marcinwrzs.github.io/Portfolio/#/
+
 ## Installation and Setup Instructions
 
 Clone down this repository. You will need node and npm installed globally on your machine.
