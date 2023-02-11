@@ -7,8 +7,6 @@ Please visit below address to see results:
 
 ##### https://marcinwrzs.github.io/Portfolio/#/ 
 
-##### [/marcinwrzs.github.io/Portfolio)](https://marcinwrzs.github.io/Portfolio/#/)
-
 ## Installation and Setup Instructions
 
 Clone down this repository. You will need node and npm installed globally on your machine.
