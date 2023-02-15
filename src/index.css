@@ -6,6 +6,10 @@
   text-decoration: none;
 }
 
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
 :root { 
   --background-day: #FCE4D8;
   --background-night: #1E1E1D;
@@ -15,4 +19,6 @@
   --font-color-day: black;
   --font-color-night: #f5f5f5;
   --skill-color-day: rgba(202,93,111, 0.7);
+  --background-section-night: #2b2b2a;
+  --underline-color: #e88e9d;
 }

@@ -6,7 +6,7 @@ import Pages from 'pages/Pages';
 import { Wrap } from './App.styled';
 
 const App = () => {
-  const {isOpen, darkMode} = useContext(GlobalContext);
+  const {darkMode} = useContext(GlobalContext);
   
   return (
       <Router>

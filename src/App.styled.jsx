@@ -26,7 +26,7 @@ export const Wrap = styled.div`
     content: '';
     position: absolute;
     bottom: 20%;
-    background-color: #e88e9d;
+    background-color: var(--underline-color);
     height: 5px;
     width: 100%;
     z-index: -1;
