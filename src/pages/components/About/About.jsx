@@ -5,17 +5,23 @@ import portfolioPhoto from 'img/portfolio photo.png';
 import portfolioPhotoNight from 'img/portfolio photo night.png';
 import { StyledAbout, TextWrapper, PhotoWrapper } from './About.styled';
 
+import { DiReact, DiJsBadge, DiHtml5, DiCss3, DiGithubBadge, } from "react-icons/di";
+import { SiTypescript, SiWebpack, SiSass} from "react-icons/si";
+
+
 const About = () => {
 
   const {isOpen, darkMode} = useContext(GlobalContext);
 
   const technologies = [
-    {id: 1, technology: 'React'},
-    {id: 2, technology: 'JavaScript'},
-    {id: 3, technology: 'HTML'},
-    {id: 4, technology: 'CSS'},
-    {id: 5, technology: 'REST API'},
-    {id: 6, technology: 'Github'},
+    {id: 1, technology: 'React', icon: <DiReact/>},
+    {id: 2, technology: 'Javascript', icon: <DiJsBadge />},
+    {id: 3, technology: 'Typescript', icon: <SiTypescript/>},
+    {id: 4, technology: 'Github', icon: <DiGithubBadge/>},
+    {id: 5, technology: 'HTML', icon: <DiHtml5/>},
+    {id: 6, technology: 'CSS', icon: <DiCss3/>},
+    {id: 7, technology: 'Webpack', icon: <SiWebpack/>},
+    {id: 8, technology: 'Sass', icon: <SiSass/>},
   ];
   
   return (
@@ -37,9 +43,12 @@ const About = () => {
             <p>Here are some technologies I have been working with:</p>
             <ul>
               {technologies.map((item) => {
-                const {id, technology} = item;
+                const {id, technology, icon} = item;
                 return (
-                  <li key={id}>{technology}</li>
+                  <li key={id}>
+                    {icon}
+                    <p>{technology}</p>
+                  </li>
                 )
               })}
             </ul>

@@ -35,22 +35,19 @@ export const TextWrapper = styled.div`
     align-items: center;
 
     ul {
-      width: 80%;
+      width: 70%;
       justify-content: space-around;
       margin-top: 10px;
       display: flex;
       flex-wrap: wrap;
 
       li {
-        width: 30%;
-        min-width: 100px;
-        margin: 5px;
-        height: 20px;
         text-align: center;
         list-style: none;
-        border: 1px solid var(--border-color);
-        background-color: var(--skill-color-day);
-        border-radius: 20px;
+        font-size: 50px;
+        width: 25%;
+        margin-bottom: 10px;
+        min-width: 100px;
       }
     }
   }
