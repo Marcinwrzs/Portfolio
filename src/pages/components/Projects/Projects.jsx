@@ -1,10 +1,16 @@
+import {GlobalContext} from 'context/Globalstate';
+import {useContext} from 'react';
 import Motion from 'pages/Motion';
 import Foodie from 'img/Foodie.png';
 import Blackjack from 'img/Blackjack.png';
 import Portfolio from 'img/Portfolio.png';
 import { ProjectsWrapper, StyledProjects, StyledProject } from './Projects.styled'
+import { AiFillGithub, AiOutlineDesktop } from "react-icons/ai";
 
 const Projects = () => {
+
+  const {darkMode} = useContext(GlobalContext);
+
   const projects = [
     {
       id: 1,
@@ -43,18 +49,31 @@ const Projects = () => {
         {projects.map((project) => {
           const {id, title, img, github, description, technologies, page} = project;
           return (
-            <StyledProject key={id}>
-            <h2>{title}</h2>
-            <img src={img} alt={title} />
-            <div className="link-container"> 
-              {page ? <a href={page} target='_blank'><h3>View website!</h3></a> : ''}
-              <a href={github} target='_blank'>
-                <h3>View project on Github!</h3>
-              </a>
-            </div>
-            <p dangerouslySetInnerHTML={{__html: description}}></p>
-            <p dangerouslySetInnerHTML={{__html: technologies}}></p>
-          </StyledProject>
+            <StyledProject key={id} darkMode={darkMode}>
+              <h2>{title}</h2>
+              <div className='container'>
+                <div className="container-photo"> 
+                  <img src={img} alt={title} />
+                  <ul>
+                    {page ? 
+                      <li>
+                        <a href={page} rel="noreferrer" target='_blank'>
+                          <AiOutlineDesktop/>Demo
+                        </a>
+                      </li> : ''}
+                    <li>
+                      <a href={github} rel="noreferrer" target='_blank'>
+                        <AiFillGithub/>Code
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div className='container-description'>
+                  <p dangerouslySetInnerHTML={{__html: description}}></p>
+                  <p dangerouslySetInnerHTML={{__html: technologies}}></p>
+                </div>
+              </div>
+            </StyledProject>
           )
         })}
       </StyledProjects>
