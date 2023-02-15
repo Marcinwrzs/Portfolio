@@ -17,6 +17,7 @@ const Navbar = () => {
   return (
     <Categories isOpen={isOpen} >
     
+      
       {navitationLinks.map((item) => {
         const {id, title, path} = item;
         return (
@@ -28,7 +29,7 @@ const Navbar = () => {
 
 
 
-      <a href={CV} target="_blank" className='resume' onClick={goPage}>
+      <a href={CV} target="_blank" rel="noreferrer" className='resume' onClick={goPage}>
         <h3>Resume</h3>
       </a>
 
