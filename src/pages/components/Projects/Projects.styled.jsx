@@ -34,8 +34,9 @@ export const StyledProjects = styled.div`
 export const StyledProject = styled.div`
   border: 1px solid black; 
   margin: 15px 0;
-  width: 80%;
-  border-radius: 10px;
+  width: 100%;
+  max-width: 1000px;
+  
   background-color: ${({ darkMode }) => darkMode ? 'var(--background-section-night)' : 'var(--font-color-night)'};
   padding: 10px 5px;
 
@@ -65,7 +66,7 @@ export const StyledProject = styled.div`
       img {
         height: 250px;
         width: 250px;
-        border-radius: 5%;
+        border-radius: 2%;
         border: 1px solid black;
         object-fit: cover;
   
