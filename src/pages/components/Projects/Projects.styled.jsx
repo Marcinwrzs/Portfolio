@@ -32,7 +32,8 @@ export const StyledProjects = styled.div`
 `;
 
 export const StyledProject = styled.div`
-  border: 1px solid black; 
+   
+  box-shadow: 1px 1px 5px gray;
   margin: 15px 0;
   width: 100%;
   max-width: 1000px;
@@ -67,7 +68,7 @@ export const StyledProject = styled.div`
         height: 250px;
         width: 250px;
         border-radius: 2%;
-        border: 1px solid black;
+        box-shadow: 1px 1px 5px gray;
         object-fit: cover;
   
         @media (max-width: 400px) {
