@@ -32,7 +32,6 @@ export const StyledProjects = styled.div`
 `;
 
 export const StyledProject = styled.div`
-   
   box-shadow: 1px 1px 5px gray;
   margin: 15px 0;
   width: 100%;
