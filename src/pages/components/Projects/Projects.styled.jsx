@@ -36,7 +36,6 @@ export const StyledProject = styled.div`
   margin: 15px 0;
   width: 100%;
   max-width: 1000px;
-  
   background-color: ${({ darkMode }) => darkMode ? 'var(--background-section-night)' : 'var(--font-color-night)'};
   padding: 10px 5px;
 
