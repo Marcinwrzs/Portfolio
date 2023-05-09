@@ -15,8 +15,7 @@ export const FormWrapper = styled.div`
 
 export const ErrorPopup = styled.div`
   height: 40px;
-  border: 1px solid red;
-  border-radius: 20px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,8 +36,9 @@ export const Form = styled.form`
   input {
     width: 250px;
     height: 30px;
-    border-radius: 50px;
-    border: 2px solid var(--skill-color-day);
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: 1px 1px 1px var(--skill-color-day);
     padding-left: 10px;
     margin-top: 10px;
     outline: none;
@@ -48,11 +48,11 @@ export const Form = styled.form`
     margin: 10px 0;
     width: 250px;
     height: 200px;
-    border-radius: 50px;
+    border-radius: 10px;
     padding: 15px;
     resize: none;
     font-size: 15px;
-    border: 2px solid var(--skill-color-day);
+    box-shadow: 1px 1px 1px var(--skill-color-day);
     outline: none;
   }
 `; 
@@ -61,7 +61,7 @@ export const FormButton = styled.button`
   height: 40px;
   width: 70px;
   background-color: rgba(0,0,0,0);
-  border-radius: 60px;
+  border-radius: 10px;
   font-size: 20px;
   border-color: var(--skill-color-day);
   cursor: pointer;
