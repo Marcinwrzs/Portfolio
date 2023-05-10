@@ -19,7 +19,7 @@ const Projects = () => {
       page: 'https://foodie-reactapp.netlify.app/',
       github: 'https://github.com/Marcinwrzs/Foodie',
       description: 'Foodie is an application written in <b>React</b> and <b>Typescript</b> with RWD standards with recipes from the external API Spoonacular.com, fetched by Axios. You can find the popular recipes or look for them by a category or specific name.', 
-      technologies: 'Technologies which have been used for this app: <b>React with Hooks, Typescript, react-router, styled-components, external API</b>, some functions have been moved to the <b>GlobalContext</b> section and handled by Reducers. The slider on the main page has been made by <b>Splidejs</b>.'
+      technologies: 'Technologies which have been used for this app: <b>React with Hooks, Typescript, react-router, styled-components, external API</b>, some functions have been moved to the <b>Context API</b>. The slider on the main page has been made by <b>React Slick</b>.'
     },
     {
       id: 2,
