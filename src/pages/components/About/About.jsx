@@ -34,7 +34,7 @@ const About = () => {
           <div className='description'>
             <p>Hello, my name is:</p>
             <h1>Marcin Wrzoś</h1>
-            <p>Currently, I work as a Technical Leader at Axa XL. On a daily basis I am responsible for process automation. Some time ago, I made a decision to change my career path to IT. I do not have commercial experience, however I am still making new projects on my own. I am a person who is characterized by a 'can-do' attitude and I am always trying to overcome the issue on my own. I am able to write responsive pages in React and Typescript in line with the newest standards and REST API. Presently, I am focused on making React projects into my personal portfolio and learning Typescript.
+            <p>Currently, I work as a Technical Leader at Axa XL. On a daily basis I am responsible for process automation. Some time ago, I made a decision to change my career path to IT. I do not have commercial experience, however I am working with senior developers on project written in React and Typescript. I am a person who is characterized by a 'can-do' attitude and I am always trying to overcome the issue on my own. I am able to write responsive pages in React and Typescript in line with the newest standards and REST API.
             </p>
           </div>
 
