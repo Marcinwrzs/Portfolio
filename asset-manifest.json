@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.23e3cdde.css",
-    "main.js": "/Portfolio/static/js/main.b2b90728.js",
-    "static/media/portfolio photo.png": "/Portfolio/static/media/portfolio photo.c0eec99b58cc6cb03b15.png",
-    "static/media/Foodie.png": "/Portfolio/static/media/Foodie.b4c0e7ef4976bb16e26d.png",
-    "static/media/Portfolio.png": "/Portfolio/static/media/Portfolio.61e522074359cac74519.png",
-    "static/media/CV.pdf": "/Portfolio/static/media/CV.f81b09d36a32c772eaf7.pdf",
-    "static/media/portfolio photo night.png": "/Portfolio/static/media/portfolio photo night.8cd814bcbe40d8f7202b.png",
-    "static/media/Blackjack.png": "/Portfolio/static/media/Blackjack.d0115e6d7dbe20eee3ed.png",
-    "index.html": "/Portfolio/index.html",
-    "main.23e3cdde.css.map": "/Portfolio/static/css/main.23e3cdde.css.map",
-    "main.b2b90728.js.map": "/Portfolio/static/js/main.b2b90728.js.map"
+    "main.css": "/static/css/main.23e3cdde.css",
+    "main.js": "/static/js/main.fc6d296a.js",
+    "static/media/portfolio photo.png": "/static/media/portfolio photo.c0eec99b58cc6cb03b15.png",
+    "static/media/Foodie.png": "/static/media/Foodie.b4c0e7ef4976bb16e26d.png",
+    "static/media/Portfolio.png": "/static/media/Portfolio.61e522074359cac74519.png",
+    "static/media/CV.pdf": "/static/media/CV.f81b09d36a32c772eaf7.pdf",
+    "static/media/portfolio photo night.png": "/static/media/portfolio photo night.8cd814bcbe40d8f7202b.png",
+    "static/media/Blackjack.png": "/static/media/Blackjack.d0115e6d7dbe20eee3ed.png",
+    "index.html": "/index.html",
+    "main.23e3cdde.css.map": "/static/css/main.23e3cdde.css.map",
+    "main.fc6d296a.js.map": "/static/js/main.fc6d296a.js.map"
   },
   "entrypoints": [
     "static/css/main.23e3cdde.css",
-    "static/js/main.b2b90728.js"
+    "static/js/main.fc6d296a.js"
   ]
 }
