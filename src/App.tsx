@@ -1,7 +1,7 @@
 import {useContext} from 'react';
 import {GlobalContext} from './context/Globalstate';
-/* import { HashRouter as Router} from 'react-router-dom'; */
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router} from 'react-router-dom';
+/* import { BrowserRouter as Router } from 'react-router-dom'; */
 import Header from 'header/Header';
 import Pages from 'pages/Pages';
 import { Wrap } from './App.styled';
