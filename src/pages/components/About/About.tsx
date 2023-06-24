@@ -1,17 +1,23 @@
 import {GlobalContext} from 'context/Globalstate';
 import {useContext} from 'react';
 import Motion from 'pages/Motion';
-import portfolioPhoto from 'img/portfolio photo.png';
-import portfolioPhotoNight from 'img/portfolio photo night.png';
 import { StyledAbout, TextWrapper, PhotoWrapper } from './About.styled';
-
-import { DiReact, DiJsBadge, DiHtml5, DiCss3, DiGithubBadge, } from "react-icons/di";
-import { SiTypescript, SiWebpack, SiSass} from "react-icons/si";
+import portfolioPhoto from 'img/profile/portfolio photo.png';
+import portfolioPhotoNight from 'img/profile/portfolio photo night.png';
+import sassImg from 'img/technologies/sass.png'
+import typescriptImg from 'img/technologies/typescript.png'
+import webpackImg from 'img/technologies/webpack.png'
+import reactImg from 'img/technologies/react.png'
+import CssImg from 'img/technologies/css.png'
+import HtmlImg from 'img/technologies/html.png'
+import javascriptImg from 'img/technologies/javascript.png'
+import githubImg from 'img/technologies/github.png'
+import githubDarkImg from 'img/technologies/github dark mode.png'
 
 interface TechnologyTypes {
   id: number;
   technology: string;
-  icon: JSX.Element;
+  icon: string;
 };
 
 const About: React.FC = () => {
@@ -19,14 +25,15 @@ const About: React.FC = () => {
   const { darkMode } = useContext(GlobalContext);
 
   const technologies: TechnologyTypes[] = [
-    {id: 1, technology: 'React', icon: <DiReact/>},
-    {id: 2, technology: 'Javascript', icon: <DiJsBadge />},
-    {id: 3, technology: 'Typescript', icon: <SiTypescript/>},
-    {id: 4, technology: 'Github', icon: <DiGithubBadge/>},
-    {id: 5, technology: 'HTML', icon: <DiHtml5/>},
-    {id: 6, technology: 'CSS', icon: <DiCss3/>},
-    {id: 7, technology: 'Webpack', icon: <SiWebpack/>},
-    {id: 8, technology: 'Sass', icon: <SiSass/>},
+    {id: 1, technology: 'React', icon: reactImg},
+    {id: 2, technology: 'Typescript', icon: typescriptImg},
+    {id: 3, technology: 'Javascript', icon: javascriptImg},
+    {id: 4, technology: 'Github', icon: darkMode ? githubDarkImg : githubImg },
+    {id: 5, technology: 'HTML', icon: HtmlImg},
+    {id: 6, technology: 'CSS', icon: CssImg},
+    {id: 7, technology: 'Sass', icon: sassImg}, 
+    {id: 8, technology: 'Webpack', icon: webpackImg},
+    
   ];
   
   return (
@@ -51,8 +58,7 @@ const About: React.FC = () => {
                 const {id, technology, icon} = item;
                 return (
                   <li key={id}>
-                    {icon}
-                    <p>{technology}</p>
+                    <img src={icon} width='100px' height='90px' alt={technology} />
                   </li>
                 )
               })}

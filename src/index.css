@@ -13,7 +13,7 @@ h1, h2, h3, h4 {
 }
 
 :root { 
-  --background-day: #FCE4D8;
+  --background-day: #f5f5f5;
   --background-night: #191919;
   --navigation-color: rgba(252, 228, 216, 0.25);
   --border-color: #ca5d6f;

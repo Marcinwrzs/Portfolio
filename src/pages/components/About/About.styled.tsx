@@ -35,7 +35,7 @@ export const TextWrapper = styled.div`
     align-items: center;
 
     ul {
-      width: 70%;
+      width: 85%;
       justify-content: space-around;
       margin-top: 10px;
       display: flex;

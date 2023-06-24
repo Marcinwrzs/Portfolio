@@ -1,9 +1,9 @@
 import {GlobalContext} from 'context/Globalstate';
 import {useContext} from 'react';
 import Motion from 'pages/Motion';
-import Foodie from 'img/Foodie.png';
-import Blackjack from 'img/Blackjack.png';
-import Portfolio from 'img/Portfolio.png';
+import Foodie from 'img/projects/Foodie.png';
+import Blackjack from 'img/projects/Blackjack.png';
+import Portfolio from 'img/projects/Portfolio.png';
 
 import { ProjectsWrapper, StyledProjects, StyledProject } from './Projects.styled'
 import { AiFillGithub, AiOutlineDesktop } from "react-icons/ai";
