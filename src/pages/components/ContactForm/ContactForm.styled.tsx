@@ -36,7 +36,7 @@ export const Form = styled.form<FormtProps>`
   flex-direction: column;
   align-items: center;
   padding: 10px 0;
-  color: red;
+
   input {
     width: 250px;
     height: 30px;
@@ -46,7 +46,6 @@ export const Form = styled.form<FormtProps>`
     padding-left: 10px;
     margin: 15px 0;
     outline: none;
-    
   }
 
   textarea {
