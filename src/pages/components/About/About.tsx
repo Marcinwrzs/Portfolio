@@ -1,6 +1,6 @@
 import {GlobalContext} from 'context/Globalstate';
 import {useContext} from 'react';
-import Motion from 'pages/Motion';
+import {Motion} from 'pages/Motion';
 import { StyledAbout, TextWrapper, PhotoWrapper } from './About.styled';
 import portfolioPhoto from 'img/profile/portfolio photo.png';
 import portfolioPhotoNight from 'img/profile/portfolio photo night.png';

@@ -1,4 +1,4 @@
-import Motion from 'pages/Motion';
+import {Motion} from 'pages/Motion';
 import { ErrorPageWrapper } from './ErrorPage.styled' 
 
 const ErrorPage: React.FC = () => {

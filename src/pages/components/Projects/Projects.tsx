@@ -1,6 +1,6 @@
 import {GlobalContext} from 'context/Globalstate';
 import {useContext} from 'react';
-import Motion from 'pages/Motion';
+import {Motion} from 'pages/Motion';
 import Foodie from 'img/projects/Foodie.png';
 import Blackjack from 'img/projects/Blackjack.png';
 import Portfolio from 'img/projects/Portfolio.png';

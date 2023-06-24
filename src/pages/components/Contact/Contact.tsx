@@ -1,4 +1,4 @@
-import Motion from 'pages/Motion';
+import {Motion} from 'pages/Motion';
 import ContactForm from 'pages/components/ContactForm/ContactForm';
 import { GoMarkGithub } from 'react-icons/go';
 import { BsLinkedin } from 'react-icons/bs';

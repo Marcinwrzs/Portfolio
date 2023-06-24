@@ -36,11 +36,11 @@ export const Form = styled.form`
   input {
     width: 250px;
     height: 30px;
-    border-radius: 10px;
-    border: 1px solid;
-    box-shadow: 1px 1px 1px var(--skill-color-day);
+    border-width: 0 0 2px 2px;
+    border-color: black;
+    background-color: rgba(0,0,0,0);
     padding-left: 10px;
-    margin-top: 10px;
+    margin: 15px 0;
     outline: none;
   }
 
@@ -48,11 +48,12 @@ export const Form = styled.form`
     margin: 10px 0;
     width: 250px;
     height: 200px;
-    border-radius: 10px;
+    border-width: 0 0 2px 2px;
+    border-color: black;
+    background-color: rgba(0,0,0,0);
     padding: 15px;
     resize: none;
     font-size: 15px;
-    box-shadow: 1px 1px 1px var(--skill-color-day);
     outline: none;
   }
 `; 
@@ -61,7 +62,6 @@ export const FormButton = styled.button`
   height: 40px;
   width: 70px;
   background-color: rgba(0,0,0,0);
-  border-radius: 10px;
   font-size: 20px;
   border-color: var(--skill-color-day);
   cursor: pointer;

@@ -1,4 +1,4 @@
-import Motion from 'pages/Motion';
+import {Motion} from 'pages/Motion';
 import 'index.css'
 import { StyledExperience, StyledPosition } from './Experience.styled'
 

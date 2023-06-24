@@ -74,9 +74,9 @@ const ContactForm: React.FC = () => {
             <span>{error}</span>
           </ErrorPopup> : ''}
           <Form ref={form} onSubmit={sendEmail} noValidate>
-            <input type="text" name="name" placeholder="Name" value={contactForm.name} onChange={updateField} required />
-            <input type="email" name="email" placeholder="Email" value={contactForm.email} onChange={updateField} required />
-            <textarea name="message" placeholder="Write your message..." value={contactForm.message} onChange={updateField} required />
+            <input type="text" name="name" placeholder="Enter your Name" value={contactForm.name} onChange={updateField} required />
+            <input type="email" name="email" placeholder="Enter your Email" value={contactForm.email} onChange={updateField} required />
+            <textarea name="message" placeholder="Enter your message..." value={contactForm.message} onChange={updateField} required />
             <FormButton type="submit">Send</FormButton>
           </Form>
         </div>

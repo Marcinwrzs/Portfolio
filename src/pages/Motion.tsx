@@ -5,7 +5,7 @@ type MotionProps = {
   children: ReactNode;
 } & HTMLMotionProps<"div">;
 
-const Motion = ({ children, ...rest }: MotionProps) => {
+export const Motion = ({ children, ...rest }: MotionProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.5 }}
@@ -18,4 +18,4 @@ const Motion = ({ children, ...rest }: MotionProps) => {
   );
 };
 
-export default Motion;
+/* export default Motion; */
