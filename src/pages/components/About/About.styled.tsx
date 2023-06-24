@@ -10,7 +10,7 @@ export const StyledAbout = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  width: 70%;
+  width: 80%;
   text-align: justify;
   padding: 20px 10px;
 
@@ -33,11 +33,11 @@ export const TextWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    
     ul {
-      width: 85%;
+      width: 100%;
       justify-content: space-around;
-      margin-top: 10px;
+      margin-top: 20px;
       display: flex;
       flex-wrap: wrap;
 

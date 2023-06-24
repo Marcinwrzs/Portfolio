@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+interface FormtProps {
+  darkMode: boolean;
+}
+
 export const FormWrapper = styled.div`
   margin: 0 auto;
   height: 460px;
@@ -27,21 +31,22 @@ export const ErrorPopup = styled.div`
   }
 `;
 
-export const Form = styled.form`
+export const Form = styled.form<FormtProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px 0;
-
+  color: red;
   input {
     width: 250px;
     height: 30px;
     border-width: 0 0 2px 2px;
-    border-color: black;
+    border-color: ${({ darkMode }) => darkMode ? '#F5F5F5' : 'black'};
     background-color: rgba(0,0,0,0);
     padding-left: 10px;
     margin: 15px 0;
     outline: none;
+    
   }
 
   textarea {
@@ -49,7 +54,7 @@ export const Form = styled.form`
     width: 250px;
     height: 200px;
     border-width: 0 0 2px 2px;
-    border-color: black;
+    border-color: ${({ darkMode }) => darkMode ? '#F5F5F5' : 'black'};
     background-color: rgba(0,0,0,0);
     padding: 15px;
     resize: none;

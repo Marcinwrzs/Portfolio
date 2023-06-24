@@ -2,6 +2,8 @@ import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { FormWrapper, Form, FormButton, ErrorPopup } from './ContactForm.styled'
 import { AiOutlineInfoCircle } from "react-icons/ai";
+import {GlobalContext} from 'context/Globalstate';
+import {useContext} from 'react';
 
 interface ContactFormState {
   name: string;
@@ -10,6 +12,8 @@ interface ContactFormState {
 }
 
 const ContactForm: React.FC = () => {
+
+  const { darkMode } = useContext(GlobalContext);
 
   const [mailSent, setMailSent] = useState<boolean>(false);
   const [error, setError] = useState<string>('');
@@ -64,7 +68,7 @@ const ContactForm: React.FC = () => {
 
 
   return (
-    <FormWrapper>
+    <FormWrapper >
       {mailSent ? (
         <h2>Thank you for your email!</h2>
       ) : (
@@ -73,7 +77,7 @@ const ContactForm: React.FC = () => {
             <AiOutlineInfoCircle/>
             <span>{error}</span>
           </ErrorPopup> : ''}
-          <Form ref={form} onSubmit={sendEmail} noValidate>
+          <Form ref={form} onSubmit={sendEmail} noValidate darkMode={darkMode}>
             <input type="text" name="name" placeholder="Enter your Name" value={contactForm.name} onChange={updateField} required />
             <input type="email" name="email" placeholder="Enter your Email" value={contactForm.email} onChange={updateField} required />
             <textarea name="message" placeholder="Enter your message..." value={contactForm.message} onChange={updateField} required />

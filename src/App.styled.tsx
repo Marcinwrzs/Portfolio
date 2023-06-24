@@ -16,9 +16,12 @@ export const Wrap = styled.div<WrapProps>`
   color: ${({ darkMode }) => darkMode ? 'var(--font-color-night)' : 'var(--font-color-day)'} ;
   padding-bottom: 25px;
   
+  input, textarea {
+    color: ${({ darkMode }) => darkMode ? 'var(--font-color-night)' : 'var(--font-color-day)'} ;
+  }
+  
   h1, h3 {
     color: ${({ darkMode }) => darkMode ? 'var(--font-color-night)' : 'var(--font-color-day)'};
-    position: relative;
     width: fit-content;
   }
 
@@ -26,16 +29,6 @@ export const Wrap = styled.div<WrapProps>`
     color: ${({ darkMode }) => darkMode ? 'var(--font-color-night)' : 'var(--font-color-day)'};
   }
 
-  h1::after {
-    content: '';
-    position: absolute;
-    bottom: 20%;
-    background-color: var(--underline-color);
-    height: 5px;
-    width: 100%;
-    z-index: -1;
-    left: 0;
-  }
 
   p {
     font-size: 20px;
