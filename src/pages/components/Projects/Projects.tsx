@@ -1,11 +1,15 @@
-import {GlobalContext} from 'context/Globalstate';
-import {useContext} from 'react';
-import {Motion} from 'pages/Motion';
-import Foodie from 'img/projects/Foodie.png';
-import Blackjack from 'img/projects/Blackjack.png';
-import Portfolio from 'img/projects/Portfolio.png';
+import { GlobalContext } from "context/Globalstate";
+import { useContext } from "react";
+import { Motion } from "pages/Motion";
+import Foodie from "img/projects/Foodie.png";
+import Blackjack from "img/projects/Blackjack.png";
+import Portfolio from "img/projects/Portfolio.png";
 
-import { ProjectsWrapper, StyledProjects, StyledProject } from './Projects.styled'
+import {
+  ProjectsWrapper,
+  StyledProjects,
+  StyledProject,
+} from "./Projects.styled";
 import { AiFillGithub, AiOutlineDesktop } from "react-icons/ai";
 
 interface Project {
@@ -19,78 +23,87 @@ interface Project {
 }
 
 const Projects: React.FC = () => {
-
   const { darkMode } = useContext(GlobalContext);
 
   const projects: Project[] = [
     {
       id: 1,
-      title: 'Foodie',
+      title: "Foodie",
       img: Foodie,
-      page: 'https://foodie-reactapp.netlify.app/',
-      github: 'https://github.com/Marcinwrzs/Foodie',
-      description: 'Foodie is an application written in <b>React</b> and <b>Typescript</b> with custom hooks like <b>usePagination</b>, project uses communication via http with the external Api. You can find the popular recipes or look for them by a category or specific name, see details of each recipe or add to favourites.', 
-      technologies: 'React with custom Hooks like usePagination, Typescript, react-router, Context API, React Slick.'
+      page: "https://foodie-reactapp.netlify.app/",
+      github: "https://github.com/Marcinwrzs/Foodie",
+      description:
+        "Foodie is an application written in <b>React</b> and <b>Typescript</b>. Project uses communication via http with the external Api. The application is connected to a backend server, which allows users to register and login. The backend server is responsible for storing user data and handling authentication requests. You can find the popular recipes or look for them by a category or specific name, see details of each recipe or add to favourites, which will be stored in the API.",
+      technologies:
+        "React with custom Hooks like usePagination, useAxios, useMutation, Typescript, react-router, Context API, React Slick.",
     },
     {
       id: 2,
-      title: 'Portfolio',
+      title: "Portfolio",
       img: Portfolio,
-      page: 'https://marcinwrzs.github.io/Portfolio/',
-      github: 'https://github.com/Marcinwrzs/Portfolio',
-      description: '<b>React</b> and <b>Typescript</b> Application which depicts my resume. Functions responsible for the Day and Night mode have been moved to <b>Context API</b>. You are able to send me an email by contact form, which is implemented by <b>EmailJS</b>. ', 
-      technologies: 'React, Typescript, Context API, react-router, styled-components, EmailJS.'
+      page: "https://marcinwrzs.github.io/Portfolio/",
+      github: "https://github.com/Marcinwrzs/Portfolio",
+      description:
+        "<b>React</b> and <b>Typescript</b> Application which depicts my resume. Functions responsible for the Day and Night mode have been moved to <b>Context API</b>. You are able to send me an email by contact form, which is implemented by <b>EmailJS</b>. ",
+      technologies:
+        "React, Typescript, Context API, react-router, styled-components, EmailJS.",
     },
     {
       id: 3,
-      title: 'Blackjack',
+      title: "Blackjack",
       img: Blackjack,
-      github: 'https://github.com/Marcinwrzs/Blackjack.git',
-      description: 'Project is a copy of a card game called Blackjack, written with Object Oriented Programming principles', 
-      technologies: 'HTML, SCSS, Javascript, Webpack.'
+      github: "https://github.com/Marcinwrzs/Blackjack.git",
+      description:
+        "Project is a copy of a card game called Blackjack, written with Object Oriented Programming principles",
+      technologies: "HTML, SCSS, Javascript, Webpack.",
     },
-    
   ];
 
   return (
     <Motion>
       <ProjectsWrapper>
-      <h1>My projects:</h1>
-      <StyledProjects>
-        {projects.map((project) => {
-          const {id, title, img, github, description, technologies, page} = project;
-          return (
-            <StyledProject key={id} darkMode={darkMode}>
-              <h2>{title}</h2>
-              <div className='container'>
-                <div className="container-photo"> 
-                  <img src={img} alt={title} />
-                  <ul>
-                    {page && 
+        <h1>My projects:</h1>
+        <StyledProjects>
+          {projects.map((project) => {
+            const { id, title, img, github, description, technologies, page } =
+              project;
+            return (
+              <StyledProject key={id} darkMode={darkMode}>
+                <h2>{title}</h2>
+                <div className="container">
+                  <div className="container-photo">
+                    <img src={img} alt={title} />
+                    <ul>
+                      {page && (
+                        <li>
+                          <a href={page} rel="noreferrer" target="_blank">
+                            <AiOutlineDesktop />
+                            Demo
+                          </a>
+                        </li>
+                      )}
                       <li>
-                        <a href={page} rel="noreferrer" target='_blank'>
-                          <AiOutlineDesktop/>Demo
+                        <a href={github} rel="noreferrer" target="_blank">
+                          <AiFillGithub />
+                          Code
                         </a>
-                      </li>}
-                    <li>
-                      <a href={github} rel="noreferrer" target='_blank'>
-                        <AiFillGithub/>Code
-                      </a>
-                    </li>
-                  </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="container-description">
+                    <p dangerouslySetInnerHTML={{ __html: description }}></p>
+                    <p>
+                      <b>Tech Stack:</b> {technologies}
+                    </p>
+                  </div>
                 </div>
-                <div className='container-description'>
-                  <p dangerouslySetInnerHTML={{__html: description}}></p>
-                  <p><b>Tech Stack:</b> {technologies}</p> 
-                </div>
-              </div>
-            </StyledProject>
-          )
-        })}
-      </StyledProjects>
+              </StyledProject>
+            );
+          })}
+        </StyledProjects>
       </ProjectsWrapper>
     </Motion>
   );
-}
+};
 
-export default Projects;  
+export default Projects;
