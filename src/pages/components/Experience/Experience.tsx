@@ -1,6 +1,6 @@
-import {Motion} from 'pages/Motion';
-import 'index.css'
-import { StyledExperience, StyledPosition } from './Experience.styled'
+import { Motion } from "pages/Motion";
+import "index.css";
+import { StyledExperience, StyledPosition } from "./Experience.styled";
 
 interface Task {
   id: number;
@@ -10,39 +10,51 @@ interface Task {
 }
 
 const Experience: React.FC = () => {
-
   const experience: Task[] = [
     {
       id: 1,
-      company: 'AXA XL',
-      role: 'Technical Lead', 
-      tasks: ['Building  and Improving process areas',
-      'Coordinating process improvement initiatives',]
+      company: "AXA XL",
+      role: "Technical Lead",
+      tasks: [
+        "Process automation in VBA and low-code applications such as Power Query",
+        "Coordinating process improvement initiatives",
+        "Run the meetings and presenting developed solutions to the team, guiding through the code",
+      ],
     },
     {
       id: 2,
-      company: 'Factor Law',
-      role: 'Senior Financial Analyst', 
-      tasks: ['Improving the process by VBA', 'Coordinating the work allocation across the Negotiator teams ']
+      company: "Factor Law",
+      role: "Senior Financial Analyst",
+      tasks: [
+        "Improving the process by VBA",
+        "Coordinating the work allocation across the Negotiator teams ",
+      ],
     },
     {
       id: 3,
-      company: 'Credit Suisse',
-      role: 'Security and Pricing Data Management Specialist',
-      tasks: ['Maintaining data of financial instruments and their prices', 'Delivering the security and pricing data']
+      company: "Credit Suisse",
+      role: "Security and Pricing Data Management Specialist",
+      tasks: [
+        "Maintaining data of financial instruments and their prices",
+        "Delivering the security and pricing data",
+      ],
     },
     {
       id: 4,
-      company: 'UBS',
-      role: 'Data & Document Specialist', 
-      tasks: ['Providing customer service and support to Client Advisors and Front Office ']
+      company: "UBS",
+      role: "Data & Document Specialist",
+      tasks: [
+        "Providing customer service and support to Client Advisors and Front Office ",
+      ],
     },
     {
       id: 5,
-      company: 'BNY Mellon',
-      role: 'Junior Representative, Reconciliation', 
-      tasks: ['Data investigation using information from different vendors',
-      'Reconciliation against broker/custodian statements']
+      company: "BNY Mellon",
+      role: "Junior Representative, Reconciliation",
+      tasks: [
+        "Data investigation using information from different vendors",
+        "Reconciliation against broker/custodian statements",
+      ],
     },
   ];
 
