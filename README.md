@@ -5,7 +5,7 @@
 This project has been deployed as a website by github pages.
 Please visit below address to see results:
 
-##### https://marcinwrzs.github.io/Portfolio/#/ 
+##### https://marcinwrzs.github.io/Portfolio/#/
 
 ## Installation and Setup Instructions
 
@@ -29,4 +29,4 @@ React Application which depicts my resume. Project is responsive and works on mo
 
 ### Technologies
 
-Technologies which have been used for this app: `React` with `Hooks`, `react-router`, `styled-components`, `Context`. Contact Form is supported by external email service `EmailJS`.
+The technologies used for this app: `React`, `Typescript` and `MUI`.

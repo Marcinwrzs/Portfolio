@@ -1,24 +1,18 @@
-import {useContext} from 'react';
-import {GlobalContext} from './context/Globalstate';
-import { HashRouter as Router} from 'react-router-dom';
-/* import { BrowserRouter as Router } from 'react-router-dom'; */
-import Header from 'header/Header';
-import Pages from 'pages/Pages';
-import { Wrap } from './App.styled';
+import { Container } from "@mui/material";
+import About from "components/About/About";
+import Contact from "components/Contact/Contact";
+import Experience from "components/Experience/Experience";
+import Projects from "components/Projects/Projects";
 
-const App: React.FC = () => {
-  const {darkMode} = useContext(GlobalContext);
-  
+const App = () => {
   return (
-      <Router>
-        <Wrap darkMode={darkMode}>
-            <Header />
-            <Pages />
-        </Wrap>
-      </Router>
+    <Container maxWidth="sm">
+      <About />
+      <Experience />
+      <Projects />
+      <Contact />
+    </Container>
   );
-}
+};
 
-export default App; 
-
-
+export default App;
