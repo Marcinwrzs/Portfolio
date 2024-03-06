@@ -8,7 +8,7 @@ const Contact: React.FC = () => {
     <>
       <h5>Get In Touch</h5>
       <Grid container spacing={2}>
-        <Grid item xs={12} sm={3}>
+        <Grid item sm={3}>
           <div>
             <p style={{ display: "inline", color: "var(--article-color)" }}>
               <GoMarkGithub /> Github
@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
             </p>
           </div>
         </Grid>
-        <Grid item xs={12} sm={9}>
+        <Grid item sm={9}>
           <p
             style={{
               margin: 0,
