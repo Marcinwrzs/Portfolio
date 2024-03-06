@@ -1,26 +1,35 @@
-* {
-  margin: 0;
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  background-color: var(--background-color);
+  color: var(--article-color);
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  font-family: 'Hanken Grotesk', sans-serif;
-  
-  text-decoration: none;
+  margin: 120px 0 50px;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Playfair Display', serif;
-  font-family: 'Cabin', sans-serif;
+h2,
+h4,
+h5 {
+  font-weight: 300;
+  color: var(--header-color);
 }
-
-:root { 
-  --background-day: #f5f5f5;
-  --background-night: #191919;
-  --navigation-color: rgba(252, 228, 216, 0.25);
-  --border-color: #ca5d6f;
-  --hover-color: gray;
-  --font-color-day: black;
-  --font-color-night: #b6a9a9;
-  --skill-color-day: rgba(202,93,111, 0.7);
-  --background-section-night: #2b2b2a;
-  --underline-color: #e88e9d;
+h5 {
+  font-size: 16px;
+}
+p {
+  font-size: 14px;
+}
+span {
+  font-size: 14px;
+}
+:root {
+  --background-color: #141414;
+  --header-color: #fcf7ff;
+  --article-color: #878c8f;
+  --role-color: #fc9e4f;
+  --company-color: #d96c06;
+  --technology-color: #e2aedd;
 }
