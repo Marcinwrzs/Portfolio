@@ -47,19 +47,19 @@ const About: React.FC = () => {
         <Grid item xs={12}>
           <h5>About</h5>
           <p>
-            I am a
+            I am a{" "}
             <span style={{ color: "var(--role-color)" }}>
               Front-End Developer
-            </span>
-            specializing in
+            </span>{" "}
+            specializing in{" "}
             <span style={{ color: "var(--role-color)" }}>React.js </span>{" "}
             including
             <span style={{ color: "var(--role-color)" }}>
               Hooks and Redux, TypeScript, Jest testing library
             </span>
             . I build cloud-based telemetry systems and vending machine
-            interfaces (e.g.,
-            <span style={{ color: "var(--company-color)" }}> “Kwiatomaty”</span>
+            interfaces (e.g.,{" "}
+            <span style={{ color: "var(--company-color)" }}>“Kwiatomaty”</span>
             ).
           </p>
           <p>
