@@ -1,7 +1,7 @@
 import { GoMarkGithub } from "react-icons/go";
 import { BsLinkedin } from "react-icons/bs";
 import { Grid } from "@mui/material";
-import CV from "CV.pdf";
+import CV from "Marcin Wrzos CV.pdf";
 
 const Contact: React.FC = () => {
   return (
