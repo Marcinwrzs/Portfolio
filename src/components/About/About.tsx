@@ -53,7 +53,7 @@ const About: React.FC = () => {
             </span>{" "}
             specializing in{" "}
             <span style={{ color: "var(--role-color)" }}>React.js </span>{" "}
-            including
+            including{" "}
             <span style={{ color: "var(--role-color)" }}>
               Hooks and Redux, TypeScript, Jest testing library
             </span>

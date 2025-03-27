@@ -31,10 +31,11 @@ const Projects: React.FC = () => {
     },
     {
       id: 3,
-      title: "Blackjack",
-      github: "https://github.com/Marcinwrzs/Blackjack.git",
-      description: "Project is a copy of a card game called Blackjack",
-      techStack: ["OOP Javascript", "SCSS"],
+      title: "Memory game",
+      github: "https://github.com/Marcinwrzs/Memory-game",
+      description:
+        "The project is an implementation of a Memory game using React, TypeScript, and MobX. The player uncovers pairs of cards, trying to find matches in the shortest time possible.",
+      techStack: ["React", "Typescript", "MobX"],
     },
   ];
 
