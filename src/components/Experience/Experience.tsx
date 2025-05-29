@@ -11,6 +11,7 @@ interface Role {
   id: number;
   company?: string;
   timeFrame: string;
+  city?: string;
   roleName: string;
   tasks?: string[];
   techStack?: string[];
@@ -22,6 +23,7 @@ const Experience: React.FC = () => {
       id: 0,
       company: "Exa22",
       timeFrame: "2024-present",
+      city: "Krakow",
       roleName: "Junior frontend developer",
       tasks: [
         "developed in React with Typescript a cloud-based telemetry system, cleverly connecting machines with a web-based portal",
@@ -36,6 +38,7 @@ const Experience: React.FC = () => {
       id: 1,
       company: "AXA XL",
       timeFrame: "2022-2023",
+      city: "Wroclaw",
       roleName: "Technical Lead",
       tasks: [
         "process automation in VBA and low-code applications",
@@ -55,7 +58,8 @@ const Experience: React.FC = () => {
     <>
       <h5>Professional experience</h5>
       {experience.map((item) => {
-        const { id, company, roleName, tasks, timeFrame, techStack } = item;
+        const { id, company, roleName, tasks, timeFrame, techStack, city } =
+          item;
         return (
           <div key={id} style={{ marginTop: "20px" }}>
             <Grid container spacing={2}>
@@ -74,8 +78,12 @@ const Experience: React.FC = () => {
                 >
                   {roleName}
                 </p>
+
                 <p style={{ margin: "5px 0", color: "var(--company-color)" }}>
                   {company}
+                </p>
+                <p style={{ margin: "5px 0", color: "var(--header-color)" }}>
+                  {city}
                 </p>
                 <p style={{ margin: "5px 0" }}>
                   {" "}
