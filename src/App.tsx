@@ -8,8 +8,8 @@ const App = () => {
   return (
     <Container maxWidth="sm">
       <About />
-      <Experience />
       <Projects />
+      <Experience />
       <Contact />
     </Container>
   );

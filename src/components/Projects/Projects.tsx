@@ -33,6 +33,7 @@ const Projects: React.FC = () => {
       id: 3,
       title: "Memory game",
       github: "https://github.com/Marcinwrzs/Memory-game",
+      page: "https://memory-game-marcin.netlify.app",
       description:
         "The project is an implementation of a Memory game using React, TypeScript, and MobX. The player uncovers pairs of cards, trying to find matches in the shortest time possible.",
       techStack: ["React", "Typescript", "MobX"],
@@ -47,14 +48,53 @@ const Projects: React.FC = () => {
         return (
           <div key={id} style={{ marginTop: "20px" }}>
             <p style={{ color: "var(--header-color)" }}>{title}</p>
-            <div>
-              <Link href={github} style={{ color: "white" }}>
-                <AiFillGithub style={{ marginRight: "15px" }} />
+
+            <div style={{ display: "flex", gap: "20px", marginBottom: "10px" }}>
+              <Link
+                href={github}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "5px",
+                  color: "white",
+                  backgroundColor: "var(--link-color)",
+                  padding: "4px 8px",
+                  borderRadius: "6px",
+                  textDecoration: "none",
+                  fontWeight: "bold",
+                  fontSize: "12px",
+                  cursor: "pointer",
+                }}
+              >
+                <AiFillGithub size={20} />
+                GitHub
               </Link>
-              <Link href={page} style={{ color: "white" }}>
-                <AiOutlineDesktop />
+
+              <Link
+                href={page}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "5px",
+                  color: "white",
+                  backgroundColor: "var(--link-color)",
+                  padding: "4px 8px",
+                  borderRadius: "6px",
+                  textDecoration: "none",
+                  fontWeight: "bold",
+                  fontSize: "12px",
+                  cursor: "pointer",
+                }}
+              >
+                <AiOutlineDesktop size={20} />
+                Demo
               </Link>
             </div>
+
             <p style={{ margin: "10px 0", textAlign: "justify" }}>
               {description}
             </p>

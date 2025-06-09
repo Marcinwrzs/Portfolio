@@ -78,7 +78,6 @@ const Experience: React.FC = () => {
                 >
                   {roleName}
                 </p>
-
                 <p style={{ margin: "5px 0", color: "var(--company-color)" }}>
                   {company}
                 </p>

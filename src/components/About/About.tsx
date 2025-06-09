@@ -59,7 +59,7 @@ const About: React.FC = () => {
             </span>
             . I build cloud-based telemetry systems and vending machine
             interfaces (e.g.,{" "}
-            <span style={{ color: "var(--company-color)" }}>“Kwiatomaty”</span>
+            <span style={{ color: "var(--role-color)" }}>“Kwiatomaty”</span>
             ).
           </p>
           <p>
