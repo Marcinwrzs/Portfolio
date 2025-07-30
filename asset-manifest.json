@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.c65607b0.css",
-    "main.js": "/Portfolio/static/js/main.ae59e3b6.js",
-    "static/media/Marcin Wrzos CV.pdf": "/Portfolio/static/media/Marcin Wrzos CV.79b9e1e615129352aa1c.pdf",
+    "main.js": "/Portfolio/static/js/main.1bc86328.js",
+    "static/media/Marcin Wrzos CV.pdf": "/Portfolio/static/media/Marcin Wrzos CV.1f3601785e76fbfdbf03.pdf",
     "index.html": "/Portfolio/index.html",
     "main.c65607b0.css.map": "/Portfolio/static/css/main.c65607b0.css.map",
-    "main.ae59e3b6.js.map": "/Portfolio/static/js/main.ae59e3b6.js.map"
+    "main.1bc86328.js.map": "/Portfolio/static/js/main.1bc86328.js.map"
   },
   "entrypoints": [
     "static/css/main.c65607b0.css",
-    "static/js/main.ae59e3b6.js"
+    "static/js/main.1bc86328.js"
   ]
 }
