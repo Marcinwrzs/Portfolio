@@ -6,7 +6,6 @@ interface Role {
   id: number;
   company?: string;
   timeFrame: string;
-  city?: string;
   roleName: string;
   intro?: string;
   tasks?: string[];
@@ -27,7 +26,6 @@ const Experience: React.FC = () => {
       id: 1,
       company: "Exa22",
       timeFrame: "Feb 2024 - Aug 2025",
-      city: "Krakow",
       roleName: "Frontend Developer",
       tasks: [
         "designed and developed a cloud-based telemetry system connecting devices to a web portal (React, TypeScript)",
@@ -40,7 +38,6 @@ const Experience: React.FC = () => {
     {
       id: 2,
       timeFrame: "Jan 2018 - Jan 2024",
-      city: "Wrocław",
       roleName: "Non-IT Jobs in Investment Banking",
       tasks: [
         "process automation in VBA and Power BI",
@@ -54,21 +51,19 @@ const Experience: React.FC = () => {
     <>
       <h5>Professional experience</h5>
       {experience.map((item) => {
-        const {
-          id,
-          company,
-          roleName,
-          tasks,
-          timeFrame,
-          techStack,
-          city,
-          intro,
-        } = item;
+        const { id, company, roleName, tasks, timeFrame, techStack, intro } =
+          item;
         return (
           <div key={id} style={{ marginTop: "20px" }}>
             <Grid container spacing={2}>
               <Grid item xs={12} sm={3}>
-                <p style={{ display: "inline", color: "var(--article-color)" }}>
+                <p
+                  style={{
+                    display: "inline",
+                    color: "var(--article-color)",
+                    whiteSpace: "nowrap",
+                  }}
+                >
                   {timeFrame}
                 </p>
               </Grid>
@@ -85,11 +80,6 @@ const Experience: React.FC = () => {
                 {company && (
                   <p style={{ margin: "5px 0", color: "var(--company-color)" }}>
                     {company}
-                  </p>
-                )}
-                {city && (
-                  <p style={{ margin: "5px 0", color: "var(--header-color)" }}>
-                    {city}
                   </p>
                 )}
                 {intro && <p style={{ margin: "5px 0" }}>{intro}</p>}
