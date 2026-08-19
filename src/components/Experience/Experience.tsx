@@ -2,17 +2,12 @@ import "index.css";
 
 import { Grid } from "@mui/material";
 
-interface Tasks {
-  id: number;
-  task: string;
-}
-
 interface Role {
   id: number;
   company?: string;
   timeFrame: string;
-  city?: string;
   roleName: string;
+  intro?: string;
   tasks?: string[];
   techStack?: string[];
 }
@@ -21,36 +16,34 @@ const Experience: React.FC = () => {
   const experience: Role[] = [
     {
       id: 0,
-      company: "Exa22",
-      timeFrame: "2024-present",
-      city: "Krakow",
-      roleName: "Junior frontend developer",
-      tasks: [
-        "developed in React with Typescript a cloud-based telemetry system, cleverly connecting machines with a web-based portal",
-        "wrote tests for front-end applications using Jest",
-        "designed and maintained interfaces for vending machines, such as “Kwiatomaty.” using React.js",
-        "integrated front-end applications with AWS services, utilizing Amazon S3 for image retrieval",
-        "collaborated closely with back-end developers to define API endpoints and application flow",
-      ],
-      techStack: ["React", "Typescript", "JEST", "AWS"],
+      company: "BCF Software",
+      timeFrame: "Sep 2025 - present",
+      roleName: "Full Stack Developer",
+      intro:
+        "Working across several parallel client projects — from serverless SaaS architecture to enterprise Java systems and process automation (RPA). See Projects below for detailed case studies.",
     },
     {
       id: 1,
-      company: "AXA XL",
-      timeFrame: "2022-2023",
-      city: "Wroclaw",
-      roleName: "Technical Lead",
+      company: "Exa22",
+      timeFrame: "Feb 2024 - Aug 2025",
+      roleName: "Frontend Developer",
       tasks: [
-        "process automation in VBA and low-code applications",
-        "coordinating process improvement initiatives",
-        "run the meetings and presenting solutions to the team",
+        "designed and developed a cloud-based telemetry system connecting devices to a web portal (React, TypeScript)",
+        "designed and maintained interfaces for vending machines (“Kwiatomaty”) in React.js, including an admin panel for managing devices, products, and real-time payments (NATS)",
+        "integrated frontend applications with AWS services (S3) for image storage and retrieval",
+        "wrote unit tests for frontend applications using Jest",
       ],
-      techStack: ["VBA", "Power Bi", "Power Query"],
+      techStack: ["React", "TypeScript", "Redux", "AWS S3", "NATS", "Jest"],
     },
     {
       id: 2,
-      timeFrame: "2018-2022",
-      roleName: "Non-it jobs in financial industry",
+      timeFrame: "Jan 2018 - Jan 2024",
+      roleName: "Non-IT Jobs in Investment Banking",
+      tasks: [
+        "process automation in VBA and Power BI",
+        "supported daily financial operations and ensured accuracy in data reconciliation, reporting, and Excel-based tracking of key performance indicators",
+      ],
+      techStack: ["SQL", "VBA", "Power BI"],
     },
   ];
 
@@ -58,13 +51,19 @@ const Experience: React.FC = () => {
     <>
       <h5>Professional experience</h5>
       {experience.map((item) => {
-        const { id, company, roleName, tasks, timeFrame, techStack, city } =
+        const { id, company, roleName, tasks, timeFrame, techStack, intro } =
           item;
         return (
           <div key={id} style={{ marginTop: "20px" }}>
             <Grid container spacing={2}>
               <Grid item xs={12} sm={3}>
-                <p style={{ display: "inline", color: "var(--article-color)" }}>
+                <p
+                  style={{
+                    display: "inline",
+                    color: "var(--article-color)",
+                    whiteSpace: "nowrap",
+                  }}
+                >
                   {timeFrame}
                 </p>
               </Grid>
@@ -78,30 +77,21 @@ const Experience: React.FC = () => {
                 >
                   {roleName}
                 </p>
-                <p style={{ margin: "5px 0", color: "var(--company-color)" }}>
-                  {company}
-                </p>
-                <p style={{ margin: "5px 0", color: "var(--header-color)" }}>
-                  {city}
-                </p>
-                <p style={{ margin: "5px 0" }}>
-                  {" "}
-                  {tasks && (
-                    <div>
-                      {tasks.map((task, index) => (
-                        <p
-                          key={index}
-                          style={{
-                            marginRight: "5px",
-                            // color: "var(--technology-color)",
-                          }}
-                        >
-                          • {task}
-                        </p>
-                      ))}
-                    </div>
-                  )}
-                </p>
+                {company && (
+                  <p style={{ margin: "5px 0", color: "var(--company-color)" }}>
+                    {company}
+                  </p>
+                )}
+                {intro && <p style={{ margin: "5px 0" }}>{intro}</p>}
+                {tasks && (
+                  <div>
+                    {tasks.map((task, index) => (
+                      <p key={index} style={{ marginRight: "5px" }}>
+                        • {task}
+                      </p>
+                    ))}
+                  </div>
+                )}
                 {techStack && (
                   <div>
                     {techStack.map((technology, index) => (

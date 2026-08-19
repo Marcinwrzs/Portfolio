@@ -6,7 +6,7 @@ import Projects from "components/Projects/Projects";
 
 const App = () => {
   return (
-    <Container maxWidth="sm">
+    <Container maxWidth={false} sx={{ maxWidth: 630 }}>
       <About />
       <Projects />
       <Experience />

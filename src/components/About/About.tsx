@@ -41,7 +41,7 @@ const About: React.FC = () => {
           <p style={{ margin: 0, color: "var(--header-color)" }}>
             Marcin Wrzoś
           </p>
-          <p style={{ margin: 0 }}>Frontend Developer</p>
+          <p style={{ margin: 0 }}>Full Stack Developer</p>
         </Grid>
 
         <Grid item xs={12}>
@@ -49,31 +49,46 @@ const About: React.FC = () => {
           <p>
             I am a{" "}
             <span style={{ color: "var(--role-color)" }}>
-              Front-End Developer
+              Full Stack Developer
             </span>{" "}
-            specializing in{" "}
-            <span style={{ color: "var(--role-color)" }}>React.js </span>{" "}
-            including{" "}
+            with a background in the{" "}
             <span style={{ color: "var(--role-color)" }}>
-              Hooks and Redux, TypeScript, Jest testing library
+              financial industry
             </span>
-            . I build cloud-based telemetry systems and vending machine
-            interfaces (e.g.,{" "}
-            <span style={{ color: "var(--role-color)" }}>“Kwiatomaty”</span>
-            ).
+            , combining engineering and domain knowledge. I work across{" "}
+            <span style={{ color: "var(--role-color)" }}>
+              React, TypeScript and Angular
+            </span>{" "}
+            on the frontend, and{" "}
+            <span style={{ color: "var(--role-color)" }}>
+              Java/Spring Boot and Node.js
+            </span>{" "}
+            on the backend, with hands-on experience in{" "}
+            <span style={{ color: "var(--role-color)" }}>
+              AWS, Terraform and CI/CD
+            </span>
+            .
           </p>
           <p>
-            At
-            <span style={{ color: "var(--company-color)" }}> Exa22</span>, I
-            develop and maintain web applications while collaborating with
-            back-end developers to define API endpoints and application flow.
+            Recent work spans a{" "}
+            <span style={{ color: "var(--role-color)" }}>
+              serverless SaaS platform
+            </span>
+            , an{" "}
+            <span style={{ color: "var(--role-color)" }}>
+              IoT monitoring platform
+            </span>{" "}
+            with a full mobile release pipeline (live on the App Store and
+            Google Play), and{" "}
+            <span style={{ color: "var(--role-color)" }}>
+              enterprise systems for the public sector
+            </span>{" "}
+            with strict security and documentation requirements.
           </p>
           <p>
-            I also integrate front-end applications with{" "}
-            <span style={{ color: "var(--role-color)" }}>
-              AWS services (Amazon S3){" "}
-            </span>
-            and write unit tests using Jest to ensure software reliability.
+            I care about clean, maintainable code and clear technical
+            documentation as much as I care about shipping features. See the
+            case studies below for more detail on each project.
           </p>
         </Grid>
       </Grid>
