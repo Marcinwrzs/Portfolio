@@ -20,7 +20,7 @@ const Experience: React.FC = () => {
       timeFrame: "Sep 2025 - present",
       roleName: "Full Stack Developer",
       intro:
-        "Working across several parallel client projects — from serverless SaaS architecture to enterprise Java systems and process automation (RPA). See Projects below for detailed case studies.",
+        "Working across several parallel client projects — from serverless SaaS architecture to enterprise Java systems and process automation (RPA). See the Projects section for detailed case studies.",
     },
     {
       id: 1,
